@@ -1,3 +1,6 @@
+#ifndef FRLIST
+#define FRLIST
+
 #include <iostream>
 #include "franklist.h"
 
@@ -2135,43 +2138,4 @@ std::ostream& operator<<(std::ostream& out, const FrankList<T>& rhv)
 
 }
 
-int main()
-{
-    vhuk::FrankList<int> list;
-    list.push_back(5);
-    list.push_front(7);
-    std::cout << list << std::endl;
-
-    list.push_back(9);
-    std::cout << list << std::endl;
-
-    list.erase(++(list.begin()));
-
-    //list.pop_front();
-    std::cout << list << std::endl;
-
-    list.insert(++(list.begin()), 8);
-    std::cout << list << std::endl;
-
-    list.push_back(1);
-    std::cout << list << std::endl;
-
-    list.sort();
-    std::cout << list << std::endl;
-
-    list.push_back(7);
-    std::cout << list << std::endl;
-
-    list.remove(7);
-    std::cout << list << std::endl;
-
-    list.reverse();
-    std::cout << list << std::endl;
-
-    list.find(8);
-    std::cout << list << std::endl;
-
-    
-
-    return 0;
-}
+#endif
