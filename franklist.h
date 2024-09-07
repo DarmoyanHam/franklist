@@ -431,6 +431,6 @@ private:
 
 }
 
-
+#include "franklist.hpp"
 
 #endif 
